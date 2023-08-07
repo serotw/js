@@ -159,9 +159,9 @@
 					$.when($(living).each((i, v)=> {
 						const plusTop = pack._plusTop();
 						let domScrollTop = pack._scrollTop();
-						if(self.container!==document.documentElement && self.container!==document.body && self.container.offsetTop) {
-							domScrollTop+= self.container.offsetTop;
-						}
+						// if(self.container!==document.documentElement && self.container!==document.body && self.container.offsetTop) {
+						// 	domScrollTop+= self.container.offsetTop;
+						// }
 						const domHeight = domScrollTop + window.innerHeight;
 						const offsetTop = v.offsetTop;
 						const offsetHeight = v.offsetHeight;

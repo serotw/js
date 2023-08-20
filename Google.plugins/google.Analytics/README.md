@@ -35,7 +35,7 @@ Add code in html>head:
 	<title>Example</title>
 	<script src="https://cdn.jsdelivr.net/gh/serotw/js-code/google.Analytics/executeGa.min.js"></script>
 	<script type="text/javascript">
-		executeGa && executeGa('YOU ARE ID');
+		executeGa && executeGa('YOU_ARE_ID');
 	</script>
 </head>
 <body>
@@ -53,16 +53,16 @@ Add code in html>head:
 	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', '`{YOU ARE ID}`', 'auto');
+	ga('create', 'YOU_ARE_ID', 'auto');
 	ga('send', 'pageview');
 </script>
 
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=`{YOU ARE ID}`"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=YOU_ARE_ID"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', '`{YOU ARE ID}`');
+  gtag('config', 'YOU_ARE_ID');
 </script>
 ```

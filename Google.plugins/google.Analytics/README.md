@@ -15,13 +15,13 @@
 Using `jsDelivr` CDN (ES5 UMD browser module):
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/serotw/js-code/google.Analytics/executeGa.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/serotw/js-code/Google.plugins/google.Analytics/executeGa.min.js"></script>
 ```
 
 Using `Github.io` url:
 
 ```html
-<script src="http://serotw.github.io/js-code/google.Analytics/executeGa.min.js"></script>
+<script src="https://serotw.github.io/js-code/Google.plugins/google.Analytics/executeGa.min.js"></script>
 ```
 
 ## Example
@@ -31,15 +31,15 @@ Add code in html>head:
 ```html
 <html lang="en">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8">
-	<title>Example</title>
-	<script src="https://cdn.jsdelivr.net/gh/serotw/js-code/google.Analytics/executeGa.min.js"></script>
-	<script type="text/javascript">
-		executeGa && executeGa('YOU_ARE_ID');
-	</script>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Example</title>
+  <script src="https://cdn.jsdelivr.net/gh/serotw/js-code/Google.plugins/google.Analytics/executeGa.min.js"></script>
+  <script type="text/javascript">
+    executeGa && executeGa('YOU_ARE_ID');
+  </script>
 </head>
 <body>
-	...
+  ...
 </body>
 </html>
 ```
@@ -49,12 +49,12 @@ Add code in html>head:
 ```html
 <!-- Analytics (analytics.js) -->
 <script>
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'YOU_ARE_ID', 'auto');
-	ga('send', 'pageview');
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'YOU_ARE_ID', 'auto');
+  ga('send', 'pageview');
 </script>
 
 <!-- Google tag (gtag.js) -->

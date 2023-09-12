@@ -306,9 +306,9 @@ the some config setting Type:
 > `1000` = 1 Seconds  
 > `60000` = 1 Minutes  
 > `3600000` = 1 Hours  
-> `1s` = 1 Seconds  
-> `1m` = 1 Minutes  
-> `1h` = 1 Hours
+> `"1s"` = 1 Seconds  
+> `"1m"` = 1 Minutes  
+> `"1h"` = 1 Hours
 
 | Variable | Type | Default | Description |
 | -------- | ---- | ------- | ----------- |

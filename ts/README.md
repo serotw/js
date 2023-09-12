@@ -265,7 +265,7 @@ instance('user')
   	...
   });
 
-// or POST request
+// or OPTIONS, GET, HEAD, PATCH, POST, PUT, DELETE request
 instance.post('messageAdd')
   .then(function(response) {
   	...

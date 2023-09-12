@@ -317,7 +317,7 @@ the some config setting Type:
 | baseURL | String or Null | null | will be prepended to `url` unless `url` is absolute. <br /> It can be convenient to set `baseURL` for an instance of `ts` to pass relative URLs to methods of that instance |
 | cache | Boolean or Numeric | false | Whether to use cache when sending requests to the server |
 | data | Object or FormData | {} | the data to be sent as the request body |
-| encryption | Boolean or Numeric | false | Whether to use BASE64 encrypted data to request data from the server, <br /> if is `true` will encode base64 data and send to server in headers |
+| encryption | Boolean or Numeric | false | Whether to use Base64 encrypted data to request data from the server, <br /> if is `true` will Base64 encrypted data and send to server in headers |
 | headers | Object | {} | custom headers to be sent |
 | logRecord | Boolean or Numeric | true | Whether to record all requested information, <br /> if is `ture` can use `ts.logShow()` for devtools console saw all log |
 | method | String or Null | get | The HTTP request method to use, <br /> such as `"OPTIONS"`, `"GET"`, `"HEAD"`, `"PATCH"`, `"POST"`, `"PUT"`, `"DELETE"`, <br /> etc. Ignored for non-HTTP(S) URLs. |

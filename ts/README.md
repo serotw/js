@@ -3,16 +3,16 @@ ts is simple XMLHttpRequest
 
 ### 繁體中文
 
-> ts 是我的希望和自定義的 XMLHttpRequest，`ts` 的一些代碼和功能來自 `jQuery` 和 `axios`.
-> 我希望這只是一個簡單的 XMLHttpRequest，沒有太多未使用的Code.
-> 所以我撰寫它供我的網站使用並分享給需要此功能的設計人員.
+> ts 是我的希望和自定義的 XMLHttpRequest，`ts` 的一些代碼和功能來自 `jQuery` 和 `axios`.  
+> 我希望這只是一個簡單的 XMLHttpRequest，沒有太多未使用的Code.  
+> 所以我撰寫它供我的網站使用並分享給需要此功能的設計人員.  
 > 目前仍在修改更新中!
 
 ### English
 
-> ts is my hope and custom the XMLHttpRequest, ts some code and function is from jQuery and axios.
-> i hope it's just a simple XMLHttpRequest without too much unused code.
-> so i make it for me website use and share for need this function design people.
+> ts is my hope and custom the XMLHttpRequest, ts some code and function is from jQuery and axios.  
+> i hope it's just a simple XMLHttpRequest without too much unused code.  
+> so i make it for me website use and share for need this function design people.  
 > currently still being revised and updated!
 
 ## CDN

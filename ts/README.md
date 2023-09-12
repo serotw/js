@@ -263,35 +263,35 @@ const instance = ts.create({
 > The available instance methods are listed below. The specified config will be merged with the instance config.
 
 ```js
-ts(config)
+instance(config)
 ```
 
 ```js
-ts.options(url[, config])
+instance.options(url[, config])
 ```
 
 ```js
-ts.get(url[, config])
+instance.get(url[, config])
 ```
 
 ```js
-ts.head(url[, config])
+instance.head(url[, config])
 ```
 
 ```js
-ts.patch(url[, data[, config]])
+instance.patch(url[, data[, config]])
 ```
 
 ```js
-ts.post(url[, data[, config]])
+instance.post(url[, data[, config]])
 ```
 
 ```js
-ts.put(url[, data[, config]])
+instance.put(url[, data[, config]])
 ```
 
 ```js
-ts.delete(url[, config])
+instance.delete(url[, config])
 ```
 
 ## Request Configs

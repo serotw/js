@@ -32,7 +32,7 @@ Using `Github.io` url:
 
 ## Example
 
-#### Make a request for a user with a given id
+### Make a request for a user with a given id
 ```js
 ts('/user?id=demo')
   .then(function(response) {
@@ -48,7 +48,7 @@ ts('/user?id=demo')
   });
 ```
 
-#### or you can setting on config
+### or you can setting on config
 ```js
 ts('/user', {
   // variable name can use loadend or done
@@ -64,7 +64,7 @@ ts('/user', {
 });
 ```
 
-#### Optionally the request above could also be done as
+### Optionally the request above could also be done as
 ```js
 ts('/user', {
     data: {
@@ -82,7 +82,7 @@ ts('/user', {
   });
 ```
 
-#### or you can setting on config
+### or you can setting on config
 ```js
 ts('/user', {
   data: {
@@ -101,7 +101,7 @@ ts('/user', {
 });
 ```
 
-#### Want to use async/await? Add the `async` keyword to your outer function/method.
+### Want to use async/await? Add the `async` keyword to your outer function/method.
 ```js
 async function getUser() {
   try {
@@ -115,16 +115,16 @@ async function getUser() {
 
 ## ts API
 
-Requests can be made by passing the relevant config to `ts`.
+> Requests can be made by passing the relevant config to `ts`.
 
 #### ts(url)
-##### Send a request (default method)
+> Send a request (default method)
 ```js
 ts('/user');
 ```
 
 #### ts(config)
-##### Send a POST request
+> Send a POST request
 ```js
 ts({
   method: 'post',
@@ -137,13 +137,13 @@ ts({
 ```
 
 #### ts(url[, method])
-##### Send a POST request
+> Send a POST request
 ```js
 ts('/user', 'POST');
 ```
 
 #### ts(url[, config])
-##### Send a POST request (default method)
+> Send a POST request (default method)
 ```js
 ts('/user', {
   method: 'post',
@@ -155,7 +155,7 @@ ts('/user', {
 ```
 
 #### ts(url[, FormData])
-##### Send a use FormData request
+> Send a use FormData request
 ```js
 var formData = new FormData();
 formData.append('id', 'demo');
@@ -164,7 +164,7 @@ ts('/user', formData);
 ```
 
 #### ts(url[, method[, config]])
-##### Send a DELETE request
+> Send a DELETE request
 ```js
 ts('/user', 'DELETE', {
   data: {
@@ -174,7 +174,7 @@ ts('/user', 'DELETE', {
 ```
 
 #### ts(url[, method[, FormData]])
-##### Send a POST and use FormData request
+> Send a POST and use FormData request
 ```js
 var formData = new FormData();
 formData.append('id', 'demo');
@@ -184,7 +184,7 @@ ts('/user', 'POST', formData);
 
 ### Request method aliases
 
-For convenience, aliases have been provided for all common request methods.
+> For convenience, aliases have been provided for all common request methods.
 
 ```js
 ts(url)
@@ -244,9 +244,9 @@ ts.delete(url[, config])
 
 ### Creating an instance
 
-You can create a new instance of `ts` with a custom config.
+> You can create a new instance of `ts` with a custom config.
 
-##### ts.create([config])
+#### ts.create([config])
 
 ```js
 const instance = ts.create({
@@ -260,7 +260,7 @@ const instance = ts.create({
 
 ### Instance methods
 
-The available instance methods are listed below. The specified config will be merged with the instance config.
+> The available instance methods are listed below. The specified config will be merged with the instance config.
 
 ```js
 ts(config)

@@ -309,18 +309,12 @@ the some config setting Type:
 > `Boolean` or `Numeric`: you can set value: `ture`, `false`, `0`, `1`
 
 `timeouts` can be set using the following format:
-> `1` ~ `99` = 1 ~ 99 Seconds
-
-> `1000` = 1 Seconds
-
-> `60000` = 1 Minutes
-
-> `3600000` = 1 Hours
-
-> `1s` = 1 Seconds
-
-> `1m` = 1 Minutes
-
+> `1` ~ `99` = 1 ~ 99 Seconds  
+> `1000` = 1 Seconds  
+> `60000` = 1 Minutes  
+> `3600000` = 1 Hours  
+> `1s` = 1 Seconds  
+> `1m` = 1 Minutes  
 > `1h` = 1 Hours
 
 | Variable | Type | Default | Description |

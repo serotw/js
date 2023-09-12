@@ -32,7 +32,7 @@ Using `Github.io` url:
 
 ## Example
 
-### Make a request for a user with a given id
+#### Make a request for a user with a given id
 ```js
 ts('/user?id=demo')
   .then(function(response) {
@@ -48,7 +48,7 @@ ts('/user?id=demo')
   });
 ```
 
-### or you can setting on config
+#### or you can setting on config
 ```js
 ts('/user', {
   // variable name can use loadend or done
@@ -64,7 +64,7 @@ ts('/user', {
 });
 ```
 
-### Optionally the request above could also be done as
+#### Optionally the request above could also be done as
 ```js
 ts('/user', {
     data: {
@@ -82,7 +82,7 @@ ts('/user', {
   });
 ```
 
-### or you can setting on config
+#### or you can setting on config
 ```js
 ts('/user', {
   data: {
@@ -101,7 +101,7 @@ ts('/user', {
 });
 ```
 
-### Want to use async/await? Add the `async` keyword to your outer function/method.
+#### Want to use async/await? Add the `async` keyword to your outer function/method.
 ```js
 async function getUser() {
   try {
@@ -312,19 +312,19 @@ the some config setting Type:
 
 | Variable | Type | Default | Description |
 | -------- | ---- | ------- | ----------- |
-| async | Boolean or Numeric | true | An optional Boolean parameter, defaulting to `true`, indicating whether or not to perform the operation asynchronously.  If this value is `false`, the `send()` method does not return until the response is received. If `true`, notification of a completed transaction is provided using event listeners.  This must be true if the `multipart` attribute is `true`, or an exception will be thrown. |
+| async | Boolean or Numeric | true | An optional Boolean parameter, defaulting to `true`, indicating whether or not to perform the operation asynchronously.   If this value is `false`, the `send()` method does not return until the response is received. If `true`, notification of a completed transaction is provided using event listeners.   This must be true if the `multipart` attribute is `true`, or an exception will be thrown. |
 | autoContentType | Boolean or Numeric | true | Automatically check url filename as set request content type |
 | baseURL | String or Null | null | will be prepended to `url` unless `url` is absolute. It can be convenient to set `baseURL` for an instance of `ts` to pass relative URLs to methods of that instance |
 | cache | Boolean or Numeric | false | Whether to use cache when sending requests to the server |
 | data | Object or FormData | {} | the data to be sent as the request body |
 | encryption | Boolean or Numeric | false | Whether to use BASE64 encrypted data to request data from the server, if is `true` will encode base64 data and send to server in headers |
 | headers | Object | {} | custom headers to be sent |
-| logRecord | Boolean or Numeric | true | Whether to record all requested information,  if is `ture` can use `ts.logShow()` for devtools console saw all log |
-| method | String or Null | get | The HTTP request method to use,  such as `"OPTIONS"`, `"GET"`, `"HEAD"`, `"PATCH"`, `"POST"`, `"PUT"`, `"DELETE"`, etc. Ignored for non-HTTP(S) URLs. |
-| responseType | String or Null | text | The `XMLHttpRequest` property `responseType` is an enumerated string value specifying the type of data contained in the response.  It also lets the author change the response type. If an empty string is set as the value of `responseType`, the default value of `text` is used.  allow value: `""`, `"arraybuffer"`, `"blob"`, `"document"`, `"json"`, `"text"` |
-| timeouts | String or Numeric | 0 | specifies the number of milliseconds before the request times out.  If the request takes longer than `timeout`, the request will be aborted, default is `0` (no timeout) |
+| logRecord | Boolean or Numeric | true | Whether to record all requested information,   if is `ture` can use `ts.logShow()` for devtools console saw all log |
+| method | String or Null | get | The HTTP request method to use,   such as `"OPTIONS"`, `"GET"`, `"HEAD"`, `"PATCH"`, `"POST"`, `"PUT"`, `"DELETE"`, etc. Ignored for non-HTTP(S) URLs. |
+| responseType | String or Null | text | The `XMLHttpRequest` property `responseType` is an enumerated string value specifying the type of data contained in the response.   It also lets the author change the response type. If an empty string is set as the value of `responseType`, the default value of `text` is used.   allow value: `""`, `"arraybuffer"`, `"blob"`, `"document"`, `"json"`, `"text"` |
+| timeouts | String or Numeric | 0 | specifies the number of milliseconds before the request times out.   If the request takes longer than `timeout`, the request will be aborted, default is `0` (no timeout) |
 | url | String or Null | null | A string or any other object with a stringifier — including a URL object — that provides the URL of the resource to send the request to. |
-| withCredentials | Boolean or Numeric | false | The `XMLHttpRequest.withCredentials` property is a boolean value that indicates whether or not cross-site `Access-Control` requests should be made using credentials such as cookies, authorization headers or TLS client certificates.  Setting `withCredentials` has no effect on same-origin requests. |
+| withCredentials | Boolean or Numeric | false | The `XMLHttpRequest.withCredentials` property is a boolean value that indicates whether or not cross-site `Access-Control` requests should be made using credentials such as cookies, authorization headers or TLS client certificates.   Setting `withCredentials` has no effect on same-origin requests. |
 
 ### Custom Callback Function Configs
 
@@ -351,9 +351,9 @@ the some config setting Type:
 | -------- | ---------- |
 | url | the this time request full url |
 | data | the response that was provided by the server |
-| headers | the HTTP headers that the server responded with all header names are lowercase and can be accessed using the bracket notation.  Example: `response.headers['content-type']` |
-| status | HTTP response status code.  See [here](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) for common HTTP response status code meanings. |
-| statusText | XMLHttpRequest response statusText.  See [here](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/statusText) for common XMLHttpRequest response statusText meanings. |
+| headers | the HTTP headers that the server responded with all header names are lowercase and can be accessed using the bracket notation.   Example: `response.headers['content-type']` |
+| status | HTTP response status code.   See [here](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) for common HTTP response status code meanings. |
+| statusText | XMLHttpRequest response statusText.   See [here](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/statusText) for common XMLHttpRequest response statusText meanings. |
 
 ## Errors Schema
 
@@ -365,7 +365,7 @@ the some config setting Type:
 | fn | An function name. |
 | configs | An ts config object with specific instance configurations defined by the user from when the request was made |
 | url | An request url. |
-| status | HTTP response status code. See [here](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) for common HTTP response status code meanings. |
+| status | HTTP response status code.   See [here](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) for common HTTP response status code meanings. |
 
 ## More
 

@@ -46,7 +46,9 @@ ts('/user?id=demo')
   .finally(function() {
     // always executed
   });
+```
 
+```js
 // or you can setting on config
 ts('/user', {
   // variable name can use loadend or done
@@ -60,8 +62,9 @@ ts('/user', {
     console.log(error);
   }
 });
+```
 
-
+```js
 // Optionally the request above could also be done as
 ts('/user', {
     data: {
@@ -77,7 +80,9 @@ ts('/user', {
   .finally(function() {
     // always executed
   });
+```
 
+```js
 // or you can setting on config
 ts('/user', {
   data: {
@@ -94,8 +99,9 @@ ts('/user', {
     console.log(error);
   }
 });
+```
 
-
+```js
 // Want to use async/await? Add the `async` keyword to your outer function/method.
 async function getUser() {
   try {
@@ -300,7 +306,7 @@ ts.delete(url[, config])
 ### Generally Setting Configs
 
 the some config setting Type:
-> `Boolean` or `Numeric`: you can set value: ture, false, 0, 1
+> `Boolean` or `Numeric`: you can set value: `ture`, `false`, `0`, `1`
 
 `timeouts` can be set using the following format:
 > `1` ~ `99` = 1 ~ 99 Seconds

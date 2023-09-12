@@ -309,7 +309,7 @@ the some config setting Type:
 > `Boolean` or `Numeric`: you can set value: ture, false, 0, 1
 
 `timeouts` can be set using the following format:
-> `1`~`99` = 1~99 Seconds
+> `1` ~ `99` = 1 ~ 99 Seconds
 
 > `1000` = 1 Seconds
 
@@ -326,7 +326,7 @@ the some config setting Type:
 | Variable | Type | Default | Description |
 | -------- | ---- | ------- | ----------- |
 | async | Boolean or Numeric | true | An optional Boolean parameter, defaulting to `true`, indicating whether or not to perform the operation asynchronously. If this value is `false`, the `send()` method does not return until the response is received. If `true`, notification of a completed transaction is provided using event listeners. This must be true if the `multipart` attribute is `true`, or an exception will be thrown. |
-| autoContentType | Boolean or Numeric | true |  |
+| autoContentType | Boolean or Numeric | true | Automatically check url filename as set request content type |
 | baseURL | String or Null | null | will be prepended to `url` unless `url` is absolute. It can be convenient to set `baseURL` for an instance of `ts` to pass relative URLs to methods of that instance |
 | cache | Boolean or Numeric | false | Whether to use cache when sending requests to the server |
 | data | Object or FormData | {} | the data to be sent as the request body |

@@ -250,48 +250,28 @@ ts.delete(url[, config])
 
 ```js
 const instance = ts.create({
-  baseURL: 'https://example.com/api/',
+  baseURL: 'https://example.com/api',
   timeout: '30s',
   headers: {
   	'X-Custom-Header': 'hello!'
   }
 });
-```
 
-### Instance methods
+// to request (default method)
+instance('user')
+  .then(function(response) {
+  	...
+  }).catch(function(error) {
+  	...
+  });
 
-> The available instance methods are listed below. The specified config will be merged with the instance config.
-
-```js
-instance(config)
-```
-
-```js
-instance.options(url[, config])
-```
-
-```js
-instance.get(url[, config])
-```
-
-```js
-instance.head(url[, config])
-```
-
-```js
-instance.patch(url[, data[, config]])
-```
-
-```js
-instance.post(url[, data[, config]])
-```
-
-```js
-instance.put(url[, data[, config]])
-```
-
-```js
-instance.delete(url[, config])
+// or POST request
+instance.post('messageAdd')
+  .then(function(response) {
+  	...
+  }).catch(function(error) {
+  	...
+  });
 ```
 
 ## Request Configs

@@ -210,9 +210,11 @@ You can create a new instance of `ts` with a custom config.
 
 ```js
 const instance = ts.create({
-  baseURL: 'https://some-domain.com/api/',
-  timeout: 1000,
-  headers: {'X-Custom-Header': 'foobar'}
+  baseURL: 'https://example.com/api/',
+  timeout: '30s',
+  headers: {
+  	'X-Custom-Header': 'hello!'
+  }
 });
 ```
 

@@ -4,15 +4,21 @@ ts is simple XMLHttpRequest
 ### 繁體中文
 
 > ts 是我的希望和自定義的 XMLHttpRequest，`ts` 的一些代碼和功能來自 `jQuery` 和 `axios`
+
 > 我希望這只是一個簡單的 XMLHttpRequest，沒有太多未使用的Code
+
 > 所以我撰寫它供我的網站使用並分享給需要此功能的設計人員
+
 > 目前仍在修改更新中
 
 ### English
 
 > ts is my hope and custom the XMLHttpRequest, ts some code and function is from jQuery and axios
+
 > i hope it's just a simple XMLHttpRequest without too much unused code
+
 > so i make it for me website use and share for need this function design people
+
 > currently still being revised and updated!
 
 ## CDN
@@ -187,20 +193,61 @@ ts('/user', 'POST', formData);
 
 For convenience, aliases have been provided for all common request methods.
 
-##### ts(url)
-##### ts(config)
-##### ts(url[, method])
-##### ts(url[, config])
-##### ts(url[, FormData])
-##### ts(url[, method[, config]])
-##### ts(url[, method[, FormData]])
-##### ts.options(url[, config])
-##### ts.get(url[, config])
-##### ts.head(url[, config])
-##### ts.patch(url[, data[, config]])
-##### ts.post(url[, data[, config]])
-##### ts.put(url[, data[, config]])
-##### ts.delete(url[, config])
+```js
+ts(url)
+```
+
+```js
+ts(config)
+```
+
+```js
+ts(url[, method])
+```
+
+```js
+ts(url[, config])
+```
+
+```js
+ts(url[, FormData])
+```
+
+```js
+ts(url[, method[, config]])
+```
+
+```js
+ts(url[, method[, FormData]])
+```
+
+```js
+ts.options(url[, config])
+```
+
+```js
+ts.get(url[, config])
+```
+
+```js
+ts.head(url[, config])
+```
+
+```js
+ts.patch(url[, data[, config]])
+```
+
+```js
+ts.post(url[, data[, config]])
+```
+
+```js
+ts.put(url[, data[, config]])
+```
+
+```js
+ts.delete(url[, config])
+```
 
 ### Creating an instance
 
@@ -222,14 +269,37 @@ const instance = ts.create({
 
 The available instance methods are listed below. The specified config will be merged with the instance config.
 
-##### ts.(config)
-##### ts.options(url[, config])
-##### ts.get(url[, config])
-##### ts.head(url[, config])
-##### ts.patch(url[, data[, config]])
-##### ts.post(url[, data[, config]])
-##### ts.put(url[, data[, config]])
-##### ts.delete(url[, config])
+```js
+ts(config)
+```
+
+```js
+ts.options(url[, config])
+```
+
+```js
+ts.get(url[, config])
+```
+
+```js
+ts.head(url[, config])
+```
+
+```js
+ts.patch(url[, data[, config]])
+```
+
+```js
+ts.post(url[, data[, config]])
+```
+
+```js
+ts.put(url[, data[, config]])
+```
+
+```js
+ts.delete(url[, config])
+```
 
 ## Request Configs
 
@@ -240,11 +310,17 @@ the some config setting Type:
 
 `timeouts` can be set using the following format:
 > `1`~`99` = 1~99 Seconds
+
 > `1000` = 1 Seconds
+
 > `60000` = 1 Minutes
+
 > `3600000` = 1 Hours
+
 > `1s` = 1 Seconds
+
 > `1m` = 1 Minutes
+
 > `1h` = 1 Hours
 
 | Variable | Type | Default | Description |

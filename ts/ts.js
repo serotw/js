@@ -255,6 +255,15 @@
 	// default use the function end
 
 //
+	function _globalEval(data) {
+		if(isStrings(data)) {
+			(window.execScript || function(data) {
+				window['eval'].call(window, data);
+			})(data);
+		}
+	}
+
+//
 	function _extend() {
 		var src, copy, name, options, clone, maps;
 		var target = arguments[0] || {}
@@ -1123,6 +1132,8 @@
 				if(isStrings(responseData)) {
 					responseData = toObject(responseData);
 				}
+			}else if(contentType.includes("application/javascript") || contentType.includes("text/javascript")) {
+				utils.globalEval(responseData);
 			}else if(contentType.includes("video/") || contentType.includes("image/")) {
 				if(isArrayBuffer(responseData) || isBlob(responseData)) {
 				//convert to base64
@@ -1408,6 +1419,7 @@
 		forEach: _forEach,
 		generateID :_generateID,
 		getCombineURL: _getCombineURL,
+		globalEval: _globalEval,
 		grep: _grep,
 		progress: _dispatchProgress,
 		randomString: _randomString,

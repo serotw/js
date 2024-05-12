@@ -5,7 +5,7 @@
 }(typeof window!='undefined' ? window : this, function() {"use strict";
 	var win = window;
 	var dom = document;
-	var createScript = (src)=> {
+	var createScript = function(src) {
 		var name = 'script';
 		var script = dom.createElement(name);
 		var find = dom.getElementsByTagName(name)[0];
@@ -36,7 +36,7 @@
 				[
 					`https://www.googletagmanager.com/gtag/js?id=${id}`,
 					'https://www.google-analytics.com/analytics.js'
-				].forEach(src=> createScript(src));
+				].forEach(function(src) { createScript(src); });
 			//
 				var list = {
 					gtag: [
@@ -48,11 +48,11 @@
 						['send', 'pageview']
 					]
 				};
-				Object.keys(list).forEach(fn=> {
+				Object.keys(list).forEach(function(fn) {
 					if(typeof win[fn]!=='function') {
 						return;
 					}
-					list[fn].forEach(data=> {
+					list[fn].forEach(function(data) {
 						if(typeof data!=='object') {
 							return;
 						}

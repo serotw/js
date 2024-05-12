@@ -294,8 +294,10 @@ the some config setting Type:
 | -------- | ---- | ------- | ----------- |
 | async | Boolean or Numeric | true | An optional Boolean parameter, defaulting to `true`, indicating whether or not to perform the operation asynchronously. <br /> If this value is `false`, the `send()` method does not return until the response is received. If `true`, notification of a completed transaction is provided using event listeners. <br /> This must be true if the `multipart` attribute is `true`, or an exception will be thrown. |
 | autoContentType | Boolean or Numeric | true | Automatically check url filename as set request content type |
+| autoGlobalScript | Boolean or Numeric | true | Automatically check content-type is javascript append response content to globals |
 | baseURL | String or Null | null | will be prepended to `url` unless `url` is absolute. <br /> It can be convenient to set `baseURL` for an instance of `ts` to pass relative URLs to methods of that instance |
 | cache | Boolean or Numeric | false | Whether to use cache when sending requests to the server |
+| closeConsoleMessage | Boolean or Numeric | false | is close ts console error message |
 | data | Object or FormData | {} | the data to be sent as the request body |
 | encryption | Boolean or Numeric | false | Whether to use Base64 encrypted data to request data from the server, <br /> if is `true` will Base64 encrypted data and send to server in headers |
 | headers | Object | {} | custom headers to be sent |
